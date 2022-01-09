@@ -9,4 +9,4 @@ Train the data using urldata.csv and create a simple classification model to det
 
 Major Goals:
 
-1. Create a webapp, maybe using streamlit. 
+1. Create a webapp, maybe using streamlit or flask and host it on GCP. 
