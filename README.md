@@ -7,6 +7,10 @@ Train the data using urldata.csv and create a simple classification model to det
 - The training dataset contains a comma separated list of urls and it's label whether good or bad. The training dataset was found online on a github repo. 
 
 
+Todo list
+- need to finish prediction part with sample malicious urls
+- create a webaapp. 
+
 Major Goals:
 
 1. Create a webapp, maybe using streamlit or flask and host it on GCP. 
