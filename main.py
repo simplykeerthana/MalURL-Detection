@@ -18,7 +18,7 @@ data = pd.read_csv("urldata.csv")
 type(data)
 
 #check what the data contains
-data.head()
+print(data.head())
 
 #now let's vectorize using tfidVectorizer
 ## we have to create a token 
@@ -57,7 +57,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 logic = LogisticRegression(max_iter=3000)
 logic.fit(x_train, y_train)
 
-pickle.dump(logic, open('final_model.sav', 'wb'))
+pickle.dump(logic, open('final_model.pkl', 'wb'))
 
 #get the accuracy
 print("Accuracy ", logic.score(x_test, y_test))

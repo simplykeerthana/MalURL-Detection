@@ -6,7 +6,7 @@ import pickle
 
 def predict(arr):
     # Load the model
-    with open('final_model.sav', 'rb') as f:
+    with open('final_model.pkl', 'rb') as f:
         model = pickle.load(f)
     classes = {0:'good',1:'bad'}
     # return prediction as well as class probabilities

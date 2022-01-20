@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<style>
+form {
+    margin: auto;
+    width: 35%;
+}
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+<head>
+    <title>Bike Usage Model</title>
+</head>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        url:
+        <input name="url" type="text" required>
+        <br>
+        
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" >
+    {% if result %}
+        {% for variable, value in original_input.items() %}
+            <b>{{ variable }}</b> : {{ value }}
+        {% endfor %}
+        <br>
+        <br> Predicted of url: 
+           <p style="font-size:50px">{{ result }}</p>
+    {% endif %}
+</div>
+</html>
