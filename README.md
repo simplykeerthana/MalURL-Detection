@@ -8,7 +8,6 @@ Train the data using urldata.csv and create a simple classification model to det
 
 
 Todo list
-- need to finish prediction part with sample malicious urls
 - create a webaapp. 
 
 Major Goals:
