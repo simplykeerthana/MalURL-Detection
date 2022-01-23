@@ -75,10 +75,23 @@ X_predict = vectorizer.transform(X_predict)
 New_predict = logic.predict(X_predict)
 print(New_predict)
 
-X_predict1 = ['www.buyfakebillsonlinee.blogspot.com', 
-'www.unitedairlineslogistics.com',
-'www.stonehousedelivery.com',
-'www.silkroadmeds-onlinepharmacy.com' ]
+# X_predict1 = ['www.buyfakebillsonlinee.blogspot.com']
+
+input_string = input('Enter elements of a list separated by space ')
+print("\n")
+user_list = input_string.split()
+# print list
+print('list: ', user_list)
+
+# # convert each item to int type
+# for i in range(len(user_list)):
+#     # convert each item to int type
+#     user_list[i] = int(user_list[i])
+
+# Calculating the sum of list elements
+# print("Sum = ", sum(user_list))
+X_predict1 = user_list
+print(list(X_predict1))
 
 X_predict1 = vectorizer.transform(X_predict1)
 New_predict1 = logic.predict(X_predict1)
