@@ -1,7 +1,7 @@
 # MalURL-Detection
 Detecting Malicious URL with Machine Learning using Python. 
 
-##Inspiration
+## Inspiration
 Machine Learning recently has been one of the hottest technologies. I want to play around with it and better understand the concepts and algorithms. Since the idea of Machine Learning is to let the algorithm learn by itself based on theh parameters from data in order to make good predictions. Nowadays, Cybersecurity requires advanced tools and software with artificial intelligence and countless types of malware damage companies' information system. 
 
 In this application, we will consider using ML algorithm to classify urls between ```legitimate``` or ```malicious```.
@@ -15,7 +15,7 @@ To run the web application
 
 ``` streamlit run streamlit.py ```
 
-#Results
+# Results
 
 Results and examples of good and bad urls. 
 
